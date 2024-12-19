@@ -1,0 +1,181 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e3fdfd, #c9f7f7); /* Gradient Background */
+  }
+  
+  /* Full-Screen Wrapper */
+  .worker-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Page Title Styling */
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Back Button Styling */
+  .back-button {
+    position: absolute;
+    top: 90px; /* Below the header */
+    left: 20px; /* Distance from the left edge */
+    background-color: #3498db; /* Blue color */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Controls Container */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    width: 60%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: #e3fdfd;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .search-bar:focus {
+    border-color: #2980b9;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sort Controls */
+  .sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between dropdown and button */
+  }
+  
+  /* Sorting Dropdown */
+  .sort-dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: #f7fbff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .sort-dropdown:hover,
+  .sort-dropdown:focus {
+    border-color: #2980b9;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sort Order Button */
+  .sort-order-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .sort-order-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Table Wrapper */
+  .table-wrapper {
+    width: 90%;
+    max-width: 1200px; /* Limits table width */
+    overflow-x: auto;
+    background: transparent;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Table Styling */
+  .worker-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+  }
+  
+  .worker-table thead {
+    background-color: rgba(44, 62, 80, 0.8); /* Soft dark blue with transparency */
+    color: white;
+  }
+  
+  .worker-table th,
+  .worker-table td {
+    padding: 12px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: transparent;
+    color: #000000;
+  }
+  
+  .worker-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparency for alternate rows */
+  }
+  
+  .worker-table tr:hover {
+    background-color: rgba(44, 62, 80, 0.1); /* Hover effect for rows */
+  }
+  
+  /* No Data Row */
+  .no-data {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive Table */
+  @media (max-width: 768px) {
+    .worker-table th,
+    .worker-table td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  
